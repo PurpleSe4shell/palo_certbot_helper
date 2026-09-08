@@ -1,4 +1,5 @@
 
+
 # Certbot For Palo PanOS
 Certbot helper script for Palo Alto PanOS firewall
 Tested on Ubuntu 26.04 with Python 3.14.4 and Palo Alto PA-820 running PAN-OS 9.1
@@ -54,7 +55,11 @@ In the Administrator Type, select "Role Based" and select the admin profile you 
     sudo echo "dns_clouflare_api_token = 'YOUR_TOKEN_HERE'" > /root/.cf_token
 
 
-### 5. Edit the fixed parameter in the script:
+### 5. Download the script and edit the fixed parameter:
+	  
+	curl -o https://raw.githubusercontent.com/PurpleSe4shell/palo_certbot_helper/refs/heads/master/pan_certbot && chmod a+x pan_certbot
+	  
+Edit these parameters at the start of the script: 
 
     CLOUDFLARE_CREDS=/root/.cf_token          #absolute path of your token file
     PAN_MGMT=10.10.10.1                       #firewall management IP
