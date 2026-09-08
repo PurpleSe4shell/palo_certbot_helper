@@ -7,6 +7,7 @@ Tested on Ubuntu 26.04 with Python 3.14.4 and Palo Alto PA-820 running PAN-OS 9.
 The script is based on https://github.com/psiri/letsencrypt_paloalto
 
 Some part of the script was written using Claude Opus 5
+
 Decision making and this README is done by a human (me!)
 
 ### What was changed from the original:
@@ -35,10 +36,15 @@ Decision making and this README is done by a human (me!)
 **In PAN OS UI after login, create a custom admin Roles, give it a name (e.g. SSL_Admin) and grant the following rights:**
 
 Web UI > Device > Certificate Management > Certificates
+
 Web UI > Device > Certificate Management > SSL/TLS Service Profile
+
 Web UI > Commit > Commit For Other Admins: disabled 
+
 XML API > Configuration
+
 XML API > Commit
+
 XML API > Import
 
 **Create a admin account (e.g. certbot_svc) with the custom admin profile (e.g. SSL_Admin):**
