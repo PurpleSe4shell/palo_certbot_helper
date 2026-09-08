@@ -5,6 +5,7 @@ Certbot helper script for Palo Alto PanOS firewall
 Tested on Ubuntu 26.04 with Python 3.14.4 and Palo Alto PA-820 running PAN-OS 9.1
 
 The script is based on https://github.com/psiri/letsencrypt_paloalto
+
 Some part of the script was written using Claude Opus 5
 Decision making and this README is done by a human (me!)
 
